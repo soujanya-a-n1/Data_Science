@@ -4,12 +4,6 @@ This repository contains completed tasks for the **CODTECH Internship**, focused
 
 ---
 
-## 📋 Table of Contents
-- [Task 1 – ETL Pipeline](#task-1---etl-pipeline)
-- [Task 2 – Deep Learning (MNIST)](#task-2---deep-learning-mnist)
-- [Notes & Recommendations](#notes--recommendations)
-
----
 
 ## ✅ Task 1 – ETL Pipeline (Task1)
 
