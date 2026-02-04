@@ -1,107 +1,78 @@
 # 📊 CODTECH Internship – Data Science Tasks
 
-This repository contains the completed tasks assigned during the **CODTECH Internship**, covering **Data Cleaning & Preprocessing (ETL Pipeline)** and **Deep Learning (Image Classification)** using Python.
+This repository contains completed tasks for the **CODTECH Internship**, focused on Data Cleaning (ETL) and Deep Learning (MNIST image classification) using Python.
 
 ---
 
-## ✅ Task 1: Data Cleaning & Preprocessing (ETL Pipeline)
-
-### 📌 Task Overview
-This task focuses on building a basic **ETL (Extract, Transform, Load) pipeline** using Python.  
-The goal is to extract data from a CSV file, clean and preprocess the data, and save the processed data into a new CSV file for further analysis or machine learning.
-
----
-
-### 🛠 Tools & Technologies Used
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- VS Code  
+## 📋 Table of Contents
+- [Task 1 – ETL Pipeline](#task-1---etl-pipeline)
+- [Task 2 – Deep Learning (MNIST)](#task-2---deep-learning-mnist)
+- [Notes & Recommendations](#notes--recommendations)
 
 ---
 
-### 📂 Project Structure
+## ✅ Task 1 – ETL Pipeline (Task1)
 
+### 📌 Overview
+Build an ETL (Extract, Transform, Load) pipeline to load data from a CSV, clean and preprocess it, and save the processed CSV for downstream analysis or modeling.
 
----
+### 📂 Files
+- `Task1/data.csv` — raw input data
+- `Task1/etl_pipeline.py` — ETL script (reads `data.csv`, preprocesses, writes `processed_data.csv`)
+- `Task1/processed_data.csv` — output (generated after running the script)
 
-### 🔄 ETL Pipeline Steps
+### 🛠 Dependencies
+- pandas
+- numpy
+- scikit-learn
 
-#### 1️⃣ Extract
-- Load data from a CSV file using Pandas.
+Install: `pip install pandas numpy scikit-learn`
 
-#### 2️⃣ Transform
-- Handle missing values using mean imputation.
-- Encode categorical variables into numerical values.
-- Scale numerical features for consistency.
-
-#### 3️⃣ Load
-- Save the cleaned and transformed data into a new CSV file.
-
----
-
-### ▶️ How to Run Task 1
-
-#### Step 1: Install Required Libraries
+### ▶️ Run
+From the repository root:
 ```bash
-pip install pandas numpy scikit-learn
-
-# Task 2: Deep Learning Project – Image Classification
-
-## 📌 Task Overview
-This task involves implementing a **Deep Learning model** for **image classification** using **TensorFlow**.  
-The model is trained on the **MNIST handwritten digits dataset** and evaluated using accuracy and loss metrics.
+python Task1/etl_pipeline.py
+```
+The script will read `Task1/data.csv` and write `Task1/processed_data.csv`.
 
 ---
 
-## 🛠 Tools & Technologies Used
-- Python  
-- TensorFlow (Keras)  
-- NumPy  
-- Matplotlib  
-- VS Code  
+## ✅ Task 2 – Deep Learning (MNIST)
 
----
+### 📌 Overview
+Train a simple neural network on the MNIST handwritten digits dataset using TensorFlow/Keras. The script trains the model, evaluates it, and saves accuracy/loss plots to `Task2/results/`.
 
-## 📂 Project Structure
+### 📂 Files
+- `Task2/model.py` — training script (creates `Task2/results/` automatically)
+- `Task2/results/accuracy.png` — training vs. validation accuracy plot
+- `Task2/results/loss.png` — training vs. validation loss plot
 
-Task2_Deep_Learning/
-│
-├── model.py # Deep learning model script
-├── requirements.txt # Required Python packages
-├── results/
-│ ├── accuracy.png # Accuracy graph
-│ └── loss.png # Loss graph
-└── README.md
+### 🛠 Dependencies
+- tensorflow
+- matplotlib
+- numpy
 
+Install: `pip install tensorflow matplotlib numpy`
 
----
-
-## 🧠 Model Architecture
-- Input Layer (28×28 images)
-- Flatten Layer
-- Dense Layer with ReLU activation
-- Output Layer with Softmax activation
-
----
-
-## ▶️ How to Run Task 2
-
-### Step 1: Install Required Libraries
+### ▶️ Run
+From the repository root:
 ```bash
-pip install tensorflow matplotlib numpy
-
+python Task2/model.py
+```
+Note: training can take several minutes depending on your machine. The script creates the `Task2/results/` directory if it does not exist.
 
 ---
 
-✅ This is **100% correct Markdown format**  
-✅ Internship-ready  
-✅ GitHub-friendly  
+## 📝 Notes & Recommendations
+- Use a virtual environment (venv or conda) to isolate dependencies.
+- Consider adding `requirements.txt` files in each task directory for reproducibility.
+- Optionally add `if __name__ == "__main__":` guards to scripts to avoid running on import.
 
-If you want, next I can:
-- 🔹 Merge Task 1 + Task 2 into **one repo structure**
-- 🔹 Give **exact GitHub push commands**
-- 🔹 Help with **CODTECH submission text**
+---
 
-Just tell me 👍
+If you'd like, I can also:
+- Create `requirements.txt` files for each task ✅
+- Add a short CI workflow to run fast smoke tests 🔧
+- Add example outputs or short screenshots to the README 📸
+
+---
