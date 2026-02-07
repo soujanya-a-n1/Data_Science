@@ -1,4 +1,4 @@
-# 📊 CODTECH Internship – Data Science Tasks
+# 📊  Data Science Tasks
 
 This repository contains completed tasks for the **CODTECH Internship**, focused on Data Cleaning (ETL) and Deep Learning (MNIST image classification) using Python.
 
@@ -70,3 +70,77 @@ If you'd like, I can also:
 - Add example outputs or short screenshots to the README 📸
 
 ---
+
+#  Task 3 – End-to-End Data Science Project
+
+## Project Title:
+House Price Prediction Web Application
+
+## Description:
+This project demonstrates a complete end-to-end data science workflow including:
+- Data collection
+- Data preprocessing
+- Feature engineering
+- Machine learning model training
+- Model deployment using Flask
+
+A trained machine learning model predicts house prices based on user input features through a web interface.
+
+## Objectives:
+- Build a complete data science pipeline
+- Train and evaluate a machine l
+
+## Project Structure:
+Task3/
+│
+├── data/
+│ └── housing.csv
+│
+├── model/
+│ └── model.pkl
+│
+├── templates/
+│ └── index.html
+│
+├── train_model.py
+├── app.py
+├── requirements.txt
+
+
+## Workflow:
+1. Data Loading
+2. Data Preprocessing
+3. Feature Encoding
+4. Train-Test Splitting
+5. Model Training
+6. Model Saving
+7. Flask API Development
+8. Web App Deployment
+
+## Installation & Execution:
+
+### Step 1: Clone Repository
+git clone <your-github-repository-link>
+
+### Step 2: Create Virtual Environment
+python -m venv .venv
+
+
+### Step 3: Activate Virtual Environment
+.venv\Scripts\activate
+
+
+### Step 4: Install Dependencies
+pip install -r requirements.txt
+
+
+### Step 5: Train Model
+python train_model.py
+
+
+### Step 6: Run Flask Application
+python app.py
+
+
+Open browser and visit:
+http://127.0.0.1:5000
