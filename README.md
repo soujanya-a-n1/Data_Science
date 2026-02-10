@@ -144,3 +144,76 @@ python app.py
 
 Open browser and visit:
 http://127.0.0.1:5000
+
+# Task 4  
+## Optimization Model using Linear Programming and Python
+
+This project is part of the ** Internship Program – Task 4**, where the objective is to solve a real-world **business optimization problem** using **Linear Programming techniques** and Python libraries such as **PuLP**.
+
+---
+
+## 📌 Problem Statement
+
+A manufacturing company produces two products: **Product A** and **Product B**.  
+Each product requires machine time and labor time. The company wants to determine the **optimal number of units to produce** in order to **maximize total profit**, subject to limited resources.
+
+---
+
+## 🎯 Objective
+
+To **maximize profit** while efficiently utilizing:
+- Machine hours
+- Labor hours  
+
+using **Linear Programming optimization techniques**.
+
+---
+
+## 🧮 Mathematical Model
+
+Let:  
+- x = units of Product A  
+- y = units of Product B  
+
+### Maximize:
+40x + 30y
+
+
+### Subject to constraints:
+2x + y ≤ 40 (Machine hours)
+x + 2y ≤ 60 (Labor hours)
+x ≥ 0, y ≥ 0
+
+
+---
+
+## 🛠 Tools & Technologies Used
+
+- Python  
+- VS Code  
+- Jupyter Notebook  
+- PuLP (Linear Programming Library)  
+
+---
+
+## 📂 Project Files
+
+TASK4_OPTIMIZATION
+│
+├── optimization.ipynb # Main notebook
+└── requirements.txt # Required Python libraries
+
+
+---
+
+## 🚀 How to Run the Project
+
+### 1️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+
+📊 Output
+Status: Optimal
+Product A units: 6.67
+Product B units: 26.67
+Maximum Profit = ₹1466.67
